@@ -4,21 +4,15 @@ using UnityEngine.Events;
 public class ClickRaycast : MonoBehaviour
 {
     [SerializeField]
-
     private float raycastDistance = 100f;
     [SerializeField]
-
     private LayerMask layerMask;
     [SerializeField]
-
     private string coinTag = "Coin";
     [SerializeField]
-
-    private UnityEvent onCoinCollected;
+    private UnityEvent<Transform> onCoinCollected;
     [SerializeField]
-
     private bool isActive = true;
-
     public void SetActive(bool active)
     {
         isActive = active;
@@ -41,7 +35,7 @@ public class ClickRaycast : MonoBehaviour
 
     private void PressCoin(GameObject coin)
     {
-        onCoinCollected.Invoke();
+        onCoinCollected.Invoke(coin.transform);
         coin.GetComponent<Coin>().Collect();
     }
 }
