@@ -2789,7 +2789,7 @@ Transform:
   m_GameObject: {fileID: 607440015}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -7.16}
+  m_LocalPosition: {x: 0.64, y: -0.34, z: -7.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -2832,6 +2832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   appearAnimationName: CoinAppear
   hideAnimationName: CoinDisappear
+  secondsActive: 5
 --- !u!1001 &616157325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4769,10 +4770,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11500000, guid: 8edd30cee61dc4947804df55fb2ebe9a, type: 3}
-        m_TargetAssemblyTypeName: CoinManager, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 3
+      - m_Target: {fileID: 641126097}
+        m_TargetAssemblyTypeName: InstantiatePoolObject, Assembly-CSharp
+        m_MethodName: InstantiateObject
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5863,6 +5864,56 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7979962365415389653, guid: de3037cfb4ab4b941a9215be6e275b2f, type: 3}
   m_PrefabInstance: {fileID: 1828621629}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1223513963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1223513965}
+  - component: {fileID: 1223513964}
+  m_Layer: 0
+  m_Name: CoinsSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1223513964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223513963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a8bd3d135c89174aadb116cdd747b2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onCoinSpawned:
+    m_PersistentCalls:
+      m_Calls: []
+  laneManager: {fileID: 0}
+  spawnInterval: 3
+  offsetY: 0
+--- !u!4 &1223513965
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223513963}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.43306, y: 1.87, z: -8.17373}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1224850148 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4641466439414436213, guid: 25b9f682754946d46bd742dd2f3fcdea, type: 3}
@@ -10051,3 +10102,4 @@ SceneRoots:
   - {fileID: 76658111}
   - {fileID: 641126098}
   - {fileID: 81961183}
+  - {fileID: 1223513965}
