@@ -14,7 +14,11 @@ public class CoinSpawner : MonoBehaviour
     private float offsetY = 0f;
     private Coroutine spawnCoroutine;
     private bool isActive = false;
-    private void Activate(bool Active)
+    private void Start()
+    {
+        Activate(true);
+    }
+    public void Activate(bool Active)
     {
         isActive = Active;
         if (isActive)
