@@ -8,6 +8,8 @@ TagManager:
   - SilverCoin
   - Enemy
   - FxTemporaire
+  - Floor
+  - Step
   layers:
   - Default
   - TransparentFX

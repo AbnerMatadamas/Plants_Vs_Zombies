@@ -40,7 +40,7 @@ public class InstantiatePoolObject : MonoBehaviour
         objectPool.Add(newObj);
         return newObj;
     }
-    public GameObject getCurrentObject()
+    public GameObject GetCurrentObject()
     {
         return currentObject;
     }

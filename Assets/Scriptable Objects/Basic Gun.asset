@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Basic Gun
   m_EditorClassIdentifier: 
   maxHealth: 100
-  fireRate: 0.9
+  fireRate: 10
   range: 15
   shootAnimationName: Shoot
   idleAnimationName: Idle
