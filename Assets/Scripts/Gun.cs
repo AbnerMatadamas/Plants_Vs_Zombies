@@ -1,10 +1,9 @@
 using UnityEngine;
 using System.Collections;
 
-public class Gun : MonoBehaviour
+public class Gun : BasePlant
 {
-    [SerializeField]
-    private Health health;
+    [Header("Gun Components")]
     [SerializeField]
     private GunData gunData;
     [SerializeField]
@@ -15,28 +14,22 @@ public class Gun : MonoBehaviour
     private LayerMask enemiesLayer;
     [SerializeField]
     private float raycastOffset = 2f;
-    [SerializeField]
-    private Animator animator;
-    private bool _isActive = false;
     private bool isShooting = false;
     private Health enemyHealth;
     private Coroutine shootCoroutine;
-    public bool IsActive
-    {
-        set { _isActive = value; }
-    }
     private void OnEnable()
     {
         enemyHealth = null;
         isShooting = false;
+        IsActive = false;
         health.initializeHealth(gunData.maxHealth);
         animator.Play(gunData.idleAnimationName, 0, 0f);
-        //SoundManager.instance.Play(gunData.appearSoundName);     
+        SoundManager.instance.Play(gunData.appearSoundName);     
     }
 
     private void Update()
     {
-        if (_isActive && health.CurrentHealth > 0)
+        if (isActive && !isShooting && health.CurrentHealth > 0)
         {
             Vector3 right = transform.TransformDirection(Vector3.right);
             Vector3 rayOrigin = transform.position + Vector3.up * raycastOffset;
@@ -69,16 +62,12 @@ public class Gun : MonoBehaviour
         {
             StopCoroutine(shootCoroutine);
         }
+        currentStep.IsOccupied = false;
+        currentStep = null;
         animator.Play(gunData.dieAnimationName, 0, 0f);
         isShooting = false;
         enemyHealth = null;
         SoundManager.instance.Play(gunData.dieShootName);
-        StartCoroutine(DieRoutine());
-    }
-
-    private IEnumerator DieRoutine()
-    {
-        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
-        gameObject.SetActive(false);
+        StartCoroutine(DieRoutine(gunData.dieAnimationName));
     }
 }
