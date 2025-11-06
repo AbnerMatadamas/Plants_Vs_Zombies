@@ -12,16 +12,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0a32b8a886a0474c81c148d05d476da, type: 3}
   m_Name: Zombie
   m_EditorClassIdentifier: 
+  maxHealth: 100
+  actionAssets:
+  - soundName: 
+    animationName: Idle
+    actionKey: 0
+  - soundName: 
+    animationName: Walking
+    actionKey: 1
+  - soundName: ZombieRestrained
+    animationName: Attack
+    actionKey: 2
+  - soundName: PunchZombie
+    animationName: ReactionHit
+    actionKey: 3
+  - soundName: ZombieGrowling
+    animationName: Dying
+    actionKey: 5
+  - soundName: ZombieScream
+    animationName: Scream
+    actionKey: 6
+  - soundName: ZombieGrowling
+    animationName: 
+    actionKey: 4
   attackRange: 2
-  timeBetweenAttacks: 2
+  timeBetweenAttacks: 1
   attackDuration: 1
-  health: 1000
-  speed: 0.6
+  speed: 0.65
   damage: 50
   enemyName: Parasite L Starkie
-  attackAnimation: Attack
-  deathAnimation: Dying
-  walkAnimation: Walking
-  hitAnimation: Reaction Hit
-  winAnimation: Scream
-  idleAnimation: Idle
