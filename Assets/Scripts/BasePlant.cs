@@ -17,7 +17,7 @@ public class BasePlant : MonoBehaviour
         set { currentStep = value; }
     }
     protected bool isActive;
-    public bool IsActive
+    public virtual bool IsActive
     {
         set
         {
@@ -31,7 +31,6 @@ public class BasePlant : MonoBehaviour
         IsActive = false;
         animator.Play(dieAnimationName, 0, 0f);
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
-        gameObject.SetActive(false);
-    
+        gameObject.SetActive(false);    
     }
 }
