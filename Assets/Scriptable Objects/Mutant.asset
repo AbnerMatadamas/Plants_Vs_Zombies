@@ -10,34 +10,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b0a32b8a886a0474c81c148d05d476da, type: 3}
-  m_Name: Zombie
+  m_Name: Mutant
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 200
   actionAssets:
   - soundName: 
     animationName: Idle
     actionKey: 0
   - soundName: 
-    animationName: Walking
+    animationName: Mutant Walking
     actionKey: 1
   - soundName: ZombieRestrained
-    animationName: Attack
+    animationName: Mutant Attack
     actionKey: 2
   - soundName: PunchZombie
-    animationName: ReactionHit
+    animationName: Mutant Hit
     actionKey: 3
   - soundName: ZombieGrowling
-    animationName: Dying
+    animationName: Mutant Dying
     actionKey: 5
   - soundName: ZombieScream
-    animationName: Scream
+    animationName: Mutant Scream
     actionKey: 6
   - soundName: ZombieGrowling
     animationName: 
     actionKey: 4
-  attackRange: 2
-  timeBetweenAttacks: 1
+  attackRange: 1
+  timeBetweenAttacks: 3
   attackDuration: 1
-  speed: 0.65
-  damage: 25
-  enemyName: Parasite L Starkie
+  speed: 0.4
+  damage: 50
+  enemyName: Mutant
