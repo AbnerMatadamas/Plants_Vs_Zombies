@@ -15,7 +15,16 @@ MonoBehaviour:
   maxHealth: 100
   actionAssets:
   - soundName: 
-    animationName: 
+    animationName: Idle
     actionKey: 0
-  spawnCoinTime: 6
+  - soundName: 
+    animationName: Idle
+    actionKey: 0
+  - soundName: 
+    animationName: SpwanCoin
+    actionKey: 2
+  - soundName: 
+    animationName: Die
+    actionKey: 5
+  spawnCoinTime: 2
   coinAmount: 1
