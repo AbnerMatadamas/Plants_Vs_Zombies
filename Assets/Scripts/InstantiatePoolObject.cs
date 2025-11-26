@@ -6,6 +6,11 @@ public class InstantiatePoolObject : MonoBehaviour
     private GameObject prefab;
     private List<GameObject> objectPool = new List<GameObject>();
     private GameObject currentObject;
+    public void Initialize()
+    {
+        currentObject = null;
+        objectPool.Clear();
+    }
     public void InstantiateObject(Transform target)
     {
         currentObject = GetPoolObject();
