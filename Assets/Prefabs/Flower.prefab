@@ -447,7 +447,7 @@ MonoBehaviour:
   stepsDetector: {fileID: 6173979590835203155}
   flowerData: {fileID: 11400000, guid: 6e1c9870a4f1a2a4d9151e8916b2675b, type: 2}
   coinPool: {fileID: 4812670779117616092}
-  coinsOffsetY: 5
+  coinsOffsetY: 10
   onSpawnCoin:
     m_PersistentCalls:
       m_Calls:

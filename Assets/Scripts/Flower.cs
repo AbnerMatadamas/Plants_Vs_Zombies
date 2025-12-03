@@ -51,6 +51,7 @@ public class Flower : BasePlant
             onSpawnCoin?.Invoke(transform);
             animator.Play(flowerData.GetAnimationName(ActionKey.Attack), 0, 0f);
             SoundManager.instance.Play(flowerData.GetSoundName(ActionKey.Attack));
+            Debug.Log("steps number"+stepsInRange.Count);
             for (int i = 0; i < flowerData.coinAmount; i++)
             {
                 if (stepsInRange.Count > 0)

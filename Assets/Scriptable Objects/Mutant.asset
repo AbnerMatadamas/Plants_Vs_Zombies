@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0a32b8a886a0474c81c148d05d476da, type: 3}
   m_Name: Mutant
   m_EditorClassIdentifier: 
-  maxHealth: 200
+  maxHealth: 1000
   actionAssets:
   - soundName: 
     animationName: Idle
