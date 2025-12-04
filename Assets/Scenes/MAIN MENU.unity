@@ -285,7 +285,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa16c68be945e61429976e5b16e7a148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneName: GAME
+  _sceneName: MAP
+  fadeAnimator: {fileID: 1530266536}
+  fadeAnimationName: FadeOut
 --- !u!4 &349335548
 Transform:
   m_ObjectHideFlags: 0
