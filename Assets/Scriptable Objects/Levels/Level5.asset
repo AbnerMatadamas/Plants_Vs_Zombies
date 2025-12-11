@@ -10,37 +10,49 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2313c100d1dae814cbe3a6c2d3851ff6, type: 3}
-  m_Name: Level3
+  m_Name: Level5
   m_EditorClassIdentifier: 
   enemiesToSpawn:
-  - spawnTime: 2
-    enemyType: 0
+  - spawnTime: 5
+    enemyType: 1
     laneIndex: 0
-  - spawnTime: 8
-    enemyType: 0
+  - spawnTime: 10
+    enemyType: 1
     laneIndex: 1
-  - spawnTime: 4
-    enemyType: 0
-    laneIndex: 2
-  - spawnTime: 6
-    enemyType: 0
-    laneIndex: 3
-  - spawnTime: 3
-    enemyType: 0
-    laneIndex: 4
   - spawnTime: 17
     enemyType: 1
-    laneIndex: 0
-  - spawnTime: 21
-    enemyType: 1
-    laneIndex: 1
-  - spawnTime: 16
-    enemyType: 1
     laneIndex: 2
-  - spawnTime: 25
+  - spawnTime: 15
     enemyType: 1
     laneIndex: 3
-  - spawnTime: 32
+  - spawnTime: 20
     enemyType: 1
     laneIndex: 4
-  availablePlants: 030000000100000002000000
+  - spawnTime: 40
+    enemyType: 1
+    laneIndex: 0
+  - spawnTime: 45
+    enemyType: 1
+    laneIndex: 1
+  - spawnTime: 50
+    enemyType: 1
+    laneIndex: 2
+  - spawnTime: 47
+    enemyType: 1
+    laneIndex: 3
+  - spawnTime: 57
+    enemyType: 1
+    laneIndex: 4
+  - spawnTime: 70
+    enemyType: 1
+    laneIndex: 0
+  - spawnTime: 57
+    enemyType: 1
+    laneIndex: 2
+  - spawnTime: 67
+    enemyType: 1
+    laneIndex: 3
+  - spawnTime: 57
+    enemyType: 1
+    laneIndex: 4
+  availablePlants: 03000000010000000200000000000000
