@@ -13,34 +13,34 @@ MonoBehaviour:
   m_Name: Level2
   m_EditorClassIdentifier: 
   enemiesToSpawn:
-  - spawnTime: 2
-    enemyType: 0
-    laneIndex: 0
   - spawnTime: 8
     enemyType: 0
+    laneIndex: 0
+  - spawnTime: 5
+    enemyType: 0
     laneIndex: 1
-  - spawnTime: 4
+  - spawnTime: 10
     enemyType: 0
     laneIndex: 2
-  - spawnTime: 6
-    enemyType: 0
-    laneIndex: 3
-  - spawnTime: 3
-    enemyType: 0
-    laneIndex: 4
   - spawnTime: 12
     enemyType: 0
-    laneIndex: 0
+    laneIndex: 3
   - spawnTime: 18
     enemyType: 0
+    laneIndex: 4
+  - spawnTime: 22
+    enemyType: 0
+    laneIndex: 0
+  - spawnTime: 28
+    enemyType: 0
     laneIndex: 1
-  - spawnTime: 14
+  - spawnTime: 20
     enemyType: 0
     laneIndex: 2
-  - spawnTime: 16
+  - spawnTime: 20
     enemyType: 0
     laneIndex: 3
-  - spawnTime: 13
+  - spawnTime: 30
     enemyType: 0
     laneIndex: 4
   availablePlants: 0300000001000000

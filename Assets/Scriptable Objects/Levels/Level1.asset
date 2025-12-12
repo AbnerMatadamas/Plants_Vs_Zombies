@@ -16,16 +16,16 @@ MonoBehaviour:
   - spawnTime: 5
     enemyType: 0
     laneIndex: 0
-  - spawnTime: 8
-    enemyType: 0
-    laneIndex: 1
   - spawnTime: 10
     enemyType: 0
+    laneIndex: 1
+  - spawnTime: 15
+    enemyType: 0
     laneIndex: 2
-  - spawnTime: 8
+  - spawnTime: 12
     enemyType: 0
     laneIndex: 3
-  - spawnTime: 11
+  - spawnTime: 20
     enemyType: 0
     laneIndex: 4
   - spawnTime: 15
@@ -33,8 +33,11 @@ MonoBehaviour:
     laneIndex: 0
   - spawnTime: 20
     enemyType: 0
-    laneIndex: 2
-  - spawnTime: 17
+    laneIndex: 1
+  - spawnTime: 27
+    enemyType: 0
+    laneIndex: 3
+  - spawnTime: 37
     enemyType: 0
     laneIndex: 4
   availablePlants: 0300000001000000

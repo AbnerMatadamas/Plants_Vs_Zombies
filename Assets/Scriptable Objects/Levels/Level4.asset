@@ -16,16 +16,16 @@ MonoBehaviour:
   - spawnTime: 7
     enemyType: 0
     laneIndex: 0
-  - spawnTime: 10
+  - spawnTime: 15
     enemyType: 1
     laneIndex: 1
   - spawnTime: 14
     enemyType: 0
     laneIndex: 2
-  - spawnTime: 16
+  - spawnTime: 20
     enemyType: 1
     laneIndex: 3
-  - spawnTime: 13
+  - spawnTime: 17
     enemyType: 0
     laneIndex: 4
   - spawnTime: 33
