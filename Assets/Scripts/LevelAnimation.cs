@@ -4,9 +4,9 @@ using UnityEngine.Events;
 public class LevelAnimation : MonoBehaviour
 {
     [SerializeField]
-    private string readySoundName = "ready";
+    private string readySoundName = "Ready";
     [SerializeField]
-    private string goSoundName = "go";
+    private string goSoundName = "Go";
     [SerializeField]
     private string LevelAnimationName = "LevelAnimation";
     [SerializeField]
