@@ -14,12 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   actionAssets:
-  - soundName: 
-    animationName: Idle
-    actionKey: 0
-  - soundName: 
-    animationName: Idle
-    actionKey: 0
+  - soundName: Flower Appear
+    animationName: Appear
+    actionKey: 4
   - soundName: Flower Attack
     animationName: SpawnCoin
     actionKey: 2
@@ -27,4 +24,4 @@ MonoBehaviour:
     animationName: Die
     actionKey: 5
   spawnCoinTime: 2
-  coinAmount: 2
+  coinAmount: 1

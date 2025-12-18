@@ -19,7 +19,7 @@ public class LevelAnimation : MonoBehaviour
     }
     public void ReadyEvent()
     {
-        SoundManager.instance.Play(goSoundName);
+        SoundManager.instance.Play(readySoundName);
     }
 
     public void GoEvent()

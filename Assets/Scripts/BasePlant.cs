@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class BasePlant : MonoBehaviour
 {
-    [Header("Common Componens")]
+    [Header("Common Components")]
     [SerializeField]
     protected Health health;
     public Health Health => health;

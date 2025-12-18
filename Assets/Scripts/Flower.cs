@@ -34,7 +34,7 @@ public class Flower : BasePlant
     {
         SoundManager.instance.Play(flowerData.GetSoundName(ActionKey.Appear));
         health.initializeHealth(flowerData.maxHealth);
-        animator.Play(flowerData.GetAnimationName(ActionKey.Idle), 0, 0f);
+        animator.Play(flowerData.GetAnimationName(ActionKey.Appear), 0, 0f);
     }
     private void OnTriggerEnter(Collider other)
     {

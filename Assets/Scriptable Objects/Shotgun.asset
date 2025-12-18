@@ -23,7 +23,7 @@ MonoBehaviour:
   - soundName: gun_shoot
     animationName: shoot
     actionKey: 2
-  - soundName: Die
+  - soundName: Flower Die
     animationName: Die
     actionKey: 5
   fireRate: 3
